@@ -94,3 +94,29 @@ student.enrol('React');
 // student.listCourses(); => Angular, React
 
 // student.courses => Angular, React
+
+// Interfaces
+interface Human {
+    firstName: string;
+    age: number;
+
+    greet: () => void;
+}
+
+let ash: Human;
+
+ash = {
+    firstName: 'Ash',
+    age: 37,
+    greet() {
+        console.log('Hello!');
+    },
+};
+
+class Instructor implements Human {
+    firstName: string;
+    age: number;
+    greet() {
+        console.log('Howdy!');
+    }
+}
