@@ -18,10 +18,13 @@ isInstructor = false;
 let hobbies: string[];
 hobbies = ['Reading', 'Cooking', 'Puzzles'];
 
-let person: {
+// Assigning Type Aliases
+type Person = {
     name: string;
     age: number;
 };
+
+let person: Person;
 
 person = {
     name: 'Ash',
@@ -32,10 +35,7 @@ person = {
 //     isEmployee: false
 // };
 
-let people: {
-    name: string;
-    age: number;
-}[];
+let people: Person[];
 
 // Type inference
 // let course = "React - The Complete Guide";
