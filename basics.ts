@@ -7,7 +7,7 @@
 let age: number;
 age = 37;
 
-let userName: string;
+let userName: string | string[];
 userName = "Ash";
 
 let isInstructor: boolean;
@@ -38,5 +38,9 @@ let people: {
 }[];
 
 // Type inference
-let course = "React - The Complete Guide";
+// let course = "React - The Complete Guide";
 // course = 12341;
+
+// Union Types
+let course: string | number = "React - The Complete Guide";
+course = 12341;
